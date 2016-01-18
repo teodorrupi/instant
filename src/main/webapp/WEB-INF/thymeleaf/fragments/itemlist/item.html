@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div th:fragment="item (number, link)">
+        <li class="group player " th:classappend="'user-row-' + ${number}">
+            <div class="player-info hover-card-parent">
+                <h2 class="vcard">
+                    <a class="url hoverable" rel="contact" href="creativemints.html" th:inline="text">
+                        <div  data-picture="true" data-class="photo">
+                            <div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>
+                            <div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>
+                            <noscript>
+                                <img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />
+                            </noscript>
+                        </div>
+                        [[${client.registeredName}]]
+                    </a>
+                <span rel="tipsy" class="freeagent-mark" title="Mike | Creative Mints is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">
+                    For hire
+                </span>
+                    <a rel="tipsy" class="jobs-mark" title="Mike | Creative Mints is hiring!" href="jobs.html">
+                        We're hiring
+                    </a>
+                <span class="meta">
+                    <a class="locality" href="designers62d2.html?location=Prague%2C+Czech+Republic">restaurant_address</a>
+                </span>
+
+                <span class="meta meta-skills">
+                    <a href="designers3b28.html">speciality</a>,
+                    <a href="designers669b.html">speciality</a>,
+                    <a href="designers0f07.html">speciality</a>
+                </span>
+                </h2>
+
+                <div class="member-actions">
+                    <a class="action settings" href="#"><span>Actions</span></a>
+                    <ul class="actions-on-user">
+                        <li>
+                            <ul>
+                                <li>
+                                    <a class="show-list-ui" href="session/new.html"><span class="badge badge-pro">Pro</span>Add or remove from lists&hellip;</a>
+                                </li>
+                                <li class="gift-pro">
+                                    <a href="proef3c.html?user=creativemints">Gift a Pro account</a>
+                                </li>
+                                <li class="edit-account">
+                                    <a href="session/new.html">Edit your account</a>
+                                </li>
+                                <li class="remove-from-team">
+                                    <a href="account/members/creativemints.html">Remove from team</a>
+                                </li>
+                                <li class="leave-team">
+                                    <a href="account/members/creativemints.html">Leave this team</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="negative">
+                            <ul>
+                                <li>
+                                    <a class="block" href="blocks3c8a.html?id=creativemints">Block Mike | Creative Mints</a>
+                                    <a class="unblock" href="blocks/creativemints.html">Unblock Mike | Creative Mints</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow-prompt">
+                    <a class="follow" href="session/new.html"><span>Follow</span></a>
+                    <a class="unfollow" href="creativemints/followers/creativemints.html"><span>Following</span></a>
+                    <a class="unblock" data-hover="Unblock" href="blocks/creativemints.html">Blocked</a>
+                </div>
+                <ul class="player-stats group">
+                    <li class="stat-shots">
+                        <a href="creativemints.html"><span class="meta">rating</span></a>
+                    </li>
+                    <li class="stat-followers">
+                        <a href="session/new.html"><span class="meta">reviews</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shots">
+                <!-- class="shots" style="display: flex; flex-direction: row;" -->
+                <div style="display: flex; flex-direction: column;">
+                    <a title="Web Design - Apr 10, 2014"
+                       data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"
+                       th:attr="data-src=${link}"
+                       href="shots/1503257-Web-Design.html"
+                            style="padding-bottom:5px;"></a>
+                    <small style="padding: 1px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 12px; font-weight: normal; background-color: #ff8833; color: #fff; font-weight: bold; line-height: 1; width: 110px;">Price: 10 €</small>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <a title="Web Design - Apr 10, 2014"
+                       data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"
+                       th:attr="data-src=${link}"
+                       href="shots/1503257-Web-Design.html"
+                       style="padding-bottom:5px;"></a>
+                    <small style="padding: 1px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 12px; font-weight: normal; background-color: #ff8833; color: #fff; font-weight: bold; line-height: 1; width: 110px;">Price: 10 €</small>
+                </div>
+
+                <!--<div style="display: flex; flex-direction: column;">-->
+                    <!--<a title="Dwunn / Character design - Nov 18, 2015"-->
+                       <!--data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"-->
+                       <!--th:attr="data-src=${link}"-->
+                       <!--href="shots/2360055-Dwunn-Character-design.html"></a>-->
+                    <!--<small style="font-size: 12px; font-weight: normal; color: #777777; font-weight: bold; line-height: 1;">10 €</small>-->
+                <!--</div>-->
+
+            </div>
+        </li>
+    </div>
+
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div id="header" th:fragment="header" class="group">
+        <div id="header-inner" class="group">
+            <div id="logo">
+                <a href="/petclinic" th:href="@{/}">
+                    <!--<img alt="dribbble" th:src="@{/resources/images/logo.jpeg}" src="../../resources/images/logo.jpeg" />-->
+                    <h1 style="color: #EEEEEE; line-height: 56px; font-weight: 400;">Food</h1>
+                    <!--<i class="fa fa-square-o main-logo" style="font-size: x-large; line-height: 36px; color: rgb(255, 255, 255);"> .al</i>-->
+                    <!--<i class="fa fa-home fa-fw fa-4x"></i>&nbsp; Home-->
+                </a>
+            </div>
+
+            <a href="#nav" id="toggle-nav">Toggle navigation</a>
+
+            <ul id="nav">
+
+                <!--<li id="t-search">-->
+                    <!--<form id="search" action="https://dribbble.com/search">-->
+                        <!--<input class="search-text" type="text" name="q" placeholder="Search " value="" />-->
+                    <!--</form>-->
+                <!--</li>-->
+
+                <!--<li id="t-signin">-->
+                    <!--<a href="session/new8fb0.html?return_to=%2Fdesigners">-->
+                        <!--<span>Sign in</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+
+
+                <!--<li id="t-signup">-->
+                <!--<a href="signup8fb0.html?return_to=%2Fdesigners">Sign up</a>-->
+                <!--</li>-->
+                <!--<li id="t-shots">-->
+                <!--<a class="has-sub" href="shots.html">Shots</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="shots.html">Popular</a></li>-->
+                <!--<li><a href="shots966b.html?sort=recent">Recent</a></li>-->
+                <!--<li><a href="shots2150.html?list=teams">Teams</a></li>-->
+                <!--<li><a href="shots46cd.html?list=debuts">Debuts</a></li>-->
+                <!--<li><a href="shotsf3bd.html?list=playoffs">Playoffs</a></li>-->
+                <!--<li><a href="shots6691.html?list=animated">Animated GIFs</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-players">-->
+                <!--<a class="has-sub" href="designers.html">Designers</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="designers.html">All</a></li>-->
+                <!--<li><a href="designers2283.html?for_hire=true">For Hire</a></li>-->
+                <!--<li class="separate"><a href="designers/overview.html">Top Skills &amp; Locations</a></li>-->
+                <!--<li><a href="skills.html">Skills</a></li>-->
+                <!--<li><a href="cities.html">Cities</a></li>-->
+                <!--<li><a href="countries.html">Countries</a></li>-->
+                <!--<li><a href="designers/prospects.html">Prospects</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-teams">-->
+                <!--<a class="has-sub" href="teams.html">Teams</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="teams.html">All</a></li>-->
+                <!--<li><a href="teams9e30.html?hiring=on">Now Hiring</a></li>-->
+                <!--<li class="separate"><a href="teams/info.html">Create a Team</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-meetups">-->
+                <!--<a href="meetups.html">Meetups</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="meetups.html">Meetups</a></li>-->
+                <!--<li><a href="session/new.html">Host a Meetup</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-stories">-->
+                <!--<a href="stories.html">Stories</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="stories.html">Latest Stories</a></li>-->
+                <!--<li class="separate"><a href="stories/categories/design-for.html">Design For…</a></li>-->
+                <!--<li><a href="stories/categories/ftw.html">FTW</a></li>-->
+                <!--<li><a href="stories/categories/meetups.html">Meetup</a></li>-->
+                <!--<li><a href="stories/categories/moonlighting.html">Moonlighting</a></li>-->
+                <!--<li><a href="stories/categories/pep-rally.html">Pep Rally</a></li>-->
+                <!--<li><a href="stories/categories/shot-block.html">Shot Block</a></li>-->
+                <!--<li><a href="stories/categories/spaced.html">Spaced</a></li>-->
+                <!--<li><a href="stories/categories/timeout.html">Timeout</a></li>-->
+                <!--<li><a href="stories/categories/updates.html">Updates</a></li>-->
+                <!--<li><a href="stories/categories/user-friendly.html">User Friendly</a></li>-->
+                <!--<li><a href="stories/categories/ux-files.html">The UX Files</a></li>-->
+                <!--<li><a href="stories/categories/weekly-replay.html">Weekly Replay</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-jobs">-->
+                <!--<a href="jobs.html">Jobs</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="jobs.html">All</a></li>-->
+                <!--<li><a href="jobs5d5b.html?location=Anywhere">Remote / Anywhere</a></li>-->
+                <!--<li><a href="jobs4952.html?teams_only=true">@ Teams</a></li>-->
+                <!--<li class="separate"><a href="jobs/info.html">Post a Job</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li id="t-more">-->
+                <!--<a href="highlights/day/2015-12-12.html">-->
+                <!--<span>More</span>-->
+                <!--</a>-->
+                <!--<ul class="tabs">-->
+                <!--<li><a href="highlights/day/2015-12-12.html">Highlights</a></li>-->
+                <!--<li><a href="deals.html">Deals for Designers</a></li>-->
+                <!--<li><a href="goods.html">Goods for Sale</a></li>-->
+                <!--<li><a href="projects.html">Projects</a></li>-->
+                <!--<li><a href="buckets.html">Buckets</a></li>-->
+                <!--<li><a href="colors/d4d1fa.html">Colors</a></li>-->
+                <!--<li><a href="tags.html">Tags</a></li>-->
+                <!--<li class="separate"><a href="about.html">About</a></li>-->
+                <!--<li><a href="http://shop.dribbble.com/">Shop</a></li>-->
+                <!--<li><a href="integrations.html">Integrations</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+    </div>
+
+</html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div th:fragment="itemlist" id="wrap">
+        <div id="wrap-inner">
+            <div id="content" class="group">
+                <div class="notice-alert">
+                    <h3><!-- message goes here --></h3>
+                    <a href="#" class="close">
+                        <img width="25" src="https://d13yacurqjgara.cloudfront.net/assets/icon-shot-x-light-2x-9756a11988521f9ef45eaa04e69543ed.png" alt="Icon shot x light 2x" />
+                    </a>
+                </div>
+
+                <h1 class="center title-long">
+                    <strong>search_query</strong>
+                    additional_filters
+                </h1>
+
+                <div th:replace="fragments/itemlist/filters :: filters"></div>
+
+                <div id="main" class="main-search">
+                    <div class="results-pane">
+                        <ol class="player-cards">
+                            <li th:each="client : ${clients.clientList}"
+                                th:include="fragments/itemlist/item :: item (number='13307', link='https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png')"
+                                th:with="client=${client}">
+                            </li>
+                            <!--<li class="user-row-13307 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="creativemints.html">-->
+                                            <!--<div  data-picture="true" data-class="photo">-->
+                                                <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                                <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                                <!--<noscript>-->
+                                                    <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                                <!--</noscript>-->
+                                            <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+          <!--<span rel="tipsy" class="freeagent-mark" title="Mike | Creative Mints is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+            <!--For hire-->
+          <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Mike | Creative Mints is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+          <!--<span class="meta">-->
+              <!--<a class="locality" href="designers62d2.html?location=Prague%2C+Czech+Republic">restaurant_address</a>-->
+
+
+          <!--</span>-->
+
+          <!--<span class="meta meta-skills">-->
+              <!--<a href="designers3b28.html">speciality</a>, <a href="designers669b.html">speciality</a>, <a href="designers0f07.html">speciality</a>-->
+          <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="proef3c.html?user=creativemints">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/creativemints.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/creativemints.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocks3c8a.html?id=creativemints">Block Mike | Creative Mints</a>-->
+                                                    <!--<a class="unblock" href="blocks/creativemints.html">Unblock Mike | Creative Mints</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="creativemints/followers/creativemints.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/creativemints.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="creativemints.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="Web Design - Apr 10, 2014" data-src="https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/1503257/web_design_teaser.jpg" href="shots/1503257-Web-Design.html">-->
+                                    <!--</a>    <a title="Dwunn / Character design - Nov 18, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/2360055/ios_game_screen_rpg_teaser.jpg" href="shots/2360055-Dwunn-Character-design.html">-->
+                                <!--</a>    <a title="Monogram / Victoire Sirois - Oct 14, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/2292129/monogram_teaser.jpg" href="shots/2292129-Monogram-Victoire-Sirois.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-14268 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="lobanovskiy.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+          <!--<span rel="tipsy" class="freeagent-mark" title="Eddie Lobanovskiy is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+            <!--For hire-->
+          <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Eddie Lobanovskiy is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+          <!--<span class="meta">-->
+              <!--<a class="locality" href="designerse352.html?location=Sarasota%2C+FL">restaurant_address</a>-->
+
+
+          <!--</span>-->
+
+          <!--<span class="meta meta-skills">-->
+              <!--<a href="designers3f68.html">speciality</a>, <a href="designers00b2.html">speciality</a>, <a href="designerscb59.html">speciality</a>-->
+          <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="probbd0.html?user=lobanovskiy">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/lobanovskiy.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/lobanovskiy.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocks4f00.html?id=lobanovskiy">Block Eddie Lobanovskiy</a>-->
+                                                    <!--<a class="unblock" href="blocks/lobanovskiy.html">Unblock Eddie Lobanovskiy</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="lobanovskiy/followers/lobanovskiy.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/lobanovskiy.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="lobanovskiy.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="Fun Buttons - Mar 26, 2014" data-src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1480083/heatwatch_teaser.gif" href="shots/1480083-Fun-Buttons.html">-->
+                                    <!--</a>    <a title="Tap - Feb 17, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1934662/taptap_teaser.png" href="shots/1934662-Tap.html">-->
+                                <!--</a>    <a title="Real burger - Feb 16, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/14268/screenshots/1933035/nav_teaser.gif" href="shots/1933035-Real-burger.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-107759 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="Creativedash.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Creativedash is available for hire. To send a work inquiry, use the Hire Us button on this team's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Creativedash is hiring!" href="Creativedash/jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designers5df4.html?location=San+Francisco%2C+CA">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designers12d4.html">speciality</a>, <a href="designers35f5.html">speciality</a>, <a href="skills/ios.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="Creativedash/listings.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro71ae.html?user=Creativedash">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/Creativedash.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/Creativedash.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blockse5f1.html?id=Creativedash">Block Creativedash</a>-->
+                                                    <!--<a class="unblock" href="blocks/Creativedash.html">Unblock Creativedash</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="Creativedash/followers.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="Creativedash/followers/Creativedash.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/Creativedash.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="teams/Creativedash.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="Creativedash/followers.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="COVERT INBOX - Jan 21, 2013" data-src="https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/905215/cover-inbox-4_teaser.gif" href="shots/905215-COVERT-INBOX.html">-->
+                                    <!--</a>    <a title="The Force Awakens - Dec 8, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/2394890/sw3_teaser.gif" href="shots/2394890-The-Force-Awakens.html">-->
+                                <!--</a>    <a title="Epic Black Friday Deals - Nov 25, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/2372734/ink2_teaser.gif" href="shots/2372734-Epic-Black-Friday-Deals.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-1 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="simplebits.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Dan Cederholm is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Dan Cederholm is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designersf2c2.html?location=Salem%2C+MA">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designers3f68.html">speciality</a>, <a href="designerscb59.html">speciality</a>, <a href="designersfb7b.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="simplebits/listings">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro7b01.html?user=simplebits">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/simplebits.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/simplebits.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocksaa2f.html?id=simplebits">Block Dan Cederholm</a>-->
+                                                    <!--<a class="unblock" href="blocks/simplebits.html">Unblock Dan Cederholm</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="simplebits/followers/simplebits.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/simplebits.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="simplebits.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="SB - Jan 30, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/1/screenshots/1907356/sb_teaser.png" href="shots/1907356-SB.html">-->
+                                    <!--</a>    <a title="Letterpressed - Nov 25, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/1/screenshots/2372941/coasters_teaser.jpg" href="shots/2372941-Letterpressed.html">-->
+                                <!--</a>    <a title="Festivus 5K 2015 - Nov 19, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/1/screenshots/2362044/festivus5k-2015_teaser.png" href="shots/2362044-Festivus-5K-2015.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-16711 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="BillSKenney.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Bill S Kenney is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Bill S Kenney is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designersd001.html?location=New+Jersey">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designerscb59.html">speciality</a>, <a href="designers00b2.html">speciality</a>, <a href="designers00b2.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="profc0a.html?user=BillSKenney">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/BillSKenney.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/BillSKenney.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocks56cd.html?id=BillSKenney">Block Bill S Kenney</a>-->
+                                                    <!--<a class="unblock" href="blocks/BillSKenney.html">Unblock Bill S Kenney</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="BillSKenney/followers/BillSKenney.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/BillSKenney.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="BillSKenney.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="JibJab Brand Book - Sep 14, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/16711/screenshots/2244580/jib_jab_brand_book_teaser.jpg" href="shots/2244580-JibJab-Brand-Book.html">-->
+                                    <!--</a>    <a title="What do you see? - Dec 7, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/16711/screenshots/2393178/exploration_teaser.png" href="shots/2393178-What-do-you-see.html">-->
+                                <!--</a>    <a title="P is for Planet - Dec 2, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/16711/screenshots/2384633/p-is-for-planet_teaser.png" href="shots/2384633-P-is-for-Planet.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-3460 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="RypeArts.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Ryan Putnam is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Ryan Putnam is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designers5df4.html?location=San+Francisco%2C+CA">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designerscb59.html">speciality</a>, <a href="designers669b.html">speciality</a>, <a href="designerse74f.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro53c2.html?user=RypeArts">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/RypeArts.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/RypeArts.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocks19cd.html?id=RypeArts">Block Ryan Putnam</a>-->
+                                                    <!--<a class="unblock" href="blocks/RypeArts">Unblock Ryan Putnam</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="RypeArts/followers/RypeArts.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/RypeArts">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="RypeArts.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="Weekender Icons - Aug 10, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2188621/weekender_teaser.png" href="shots/2188621-Weekender-Icons.html">-->
+                                    <!--</a>    <a title="Lenore - Dec 9, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2395878/lenore_teaser.png" href="shots/2395878-Lenore.html">-->
+                                <!--</a>    <a title="Gestalt - Dec 8, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2394882/gestalt_teaser.gif" href="shots/2394882-Gestalt.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-10149 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="kerem.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Kerem Suer is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Kerem Suer is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designers5df4.html?location=San+Francisco%2C+CA">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designers3f68.html">speciality</a>, <a href="skills/ios.html">speciality</a>, <a href="designersf59a.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="kerem/listings">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="proc2a3.html?user=kerem">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/kerem.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/kerem.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blockscf1f.html?id=kerem">Block Kerem Suer</a>-->
+                                                    <!--<a class="unblock" href="blocks/kerem.html">Unblock Kerem Suer</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="kerem/followers/kerem.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/kerem.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="kerem.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="Anemometer screen - Nov 20, 2013" data-src="https://d13yacurqjgara.cloudfront.net/users/10149/screenshots/1318829/mock_teaser.png" href="shots/1318829-Anemometer-screen.html">-->
+                                    <!--</a>    <a title="Operator.com design - Nov 7, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/10149/screenshots/2339164/operatorcom_teaser.gif" href="shots/2339164-Operator-com-design.html">-->
+                                <!--</a>    <a title="Omada Cycling Jersey - Oct 6, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/10149/screenshots/2277926/omada_teaser.png" href="shots/2277926-Omada-Cycling-Jersey.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-255 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="rogie"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Rogie King is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designerseb8b.html?location=Helena%2C+Montana">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designers3f68.html">speciality</a>, <a href="designers669b.html">speciality</a>, <a href="designersfb7b.html">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro6b70.html?user=rogie">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/rogie">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/rogie">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocksb281.html?id=rogie">Block Rogie King</a>-->
+                                                    <!--<a class="unblock" href="blocks/rogie.html">Unblock Rogie King</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="rogie/followers/rogie.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/rogie.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="rogie">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="Wall-e - Nov 17, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/255/screenshots/2357921/walle-dribble_teaser.png" href="shots/2357921-Wall-e.html">-->
+                                    <!--</a>    <a title="M-O - Dec 9, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/255/screenshots/2396911/mo-dribbble_teaser.png" href="shots/2396911-M-O.html">-->
+                                <!--</a>    <a title="Burn•e - Dec 8, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/255/screenshots/2395095/burn-e_teaser.png" href="shots/2395095-Burn-e.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-4 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="owltastic.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+              <!--<span rel="tipsy" class="freeagent-mark" title="Meagan Fisher is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+                <!--For hire-->
+              <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Meagan Fisher is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+              <!--<span class="meta">-->
+                  <!--<a class="locality" href="designers151c.html?location=Brooklyn%2C+NY">restaurant_address</a>-->
+
+
+              <!--</span>-->
+
+              <!--<span class="meta meta-skills">-->
+                  <!--<a href="designers00b2.html">speciality</a>, <a href="designers3f68.html">speciality</a>, <a href="designers6abc">speciality</a>-->
+              <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro738a.html?user=owltastic">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/owltastic.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/owltastic.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocks49b1.html?id=owltastic">Block Meagan Fisher</a>-->
+                                                    <!--<a class="unblock" href="blocks/owltastic.html">Unblock Meagan Fisher</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="owltastic/followers/owltastic.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/owltastic.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="owltastic.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="SproutVideo Homepage Case Study - Nov 11, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/4/screenshots/2347288/dribbble-cover_teaser.png" href="shots/2347288-SproutVideo-Homepage-Case-Study">-->
+                                    <!--</a>    <a title="SproutVideo Video Websites Page Case Study - Nov 17, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/4/screenshots/2357655/dribbble-video-websites_teaser.png" href="shots/2357655-SproutVideo-Video-Websites-Page-Case-Study.html">-->
+                                <!--</a>    <a title="SproutVideo Pricing Page Case Study - Nov 13, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/4/screenshots/2351315/pricing-dribble_teaser.png" href="shots/2351315-SproutVideo-Pricing-Page-Case-Study.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                            <!--<li class="user-row-2559 group player ">-->
+                                <!--<div class="player-info hover-card-parent">-->
+                                    <!--<h2 class="vcard">-->
+                                        <!--<a class="url hoverable" rel="contact" href="JulienRenvoye.html"><div data-picture="true" data-class="photo">-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png"></div>-->
+                                            <!--<div data-src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" data-media="(-webkit-min-device-pixel-ratio: 1.5), (min&#45;&#45;moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)"></div>-->
+                                            <!--<noscript>-->
+                                                <!--<img class="photo" src="https://www.primechef.jp/assets/food-placeholder-0ab410aeb5dd57061bd8fcd379c0333d.png" />-->
+                                            <!--</noscript>-->
+                                        <!--</div>-->
+                                            <!--restaurant_name</a>-->
+
+          <!--<span rel="tipsy" class="freeagent-mark" title="Julien Renvoye is available for hire. To send a work inquiry, use the Hire Me button on this designer's profile.">-->
+            <!--For hire-->
+          <!--</span>-->
+
+                                        <!--<a rel="tipsy" class="jobs-mark" title="Julien Renvoye is hiring!" href="jobs.html">-->
+                                            <!--We're hiring-->
+                                        <!--</a>-->
+          <!--<span class="meta">-->
+              <!--<a class="locality" href="designers908d.html?location=San+Francisco">restaurant_address</a>-->
+
+
+          <!--</span>-->
+
+          <!--<span class="meta meta-skills">-->
+              <!--<a href="designers3f68.html">speciality</a>, <a href="designers669b.html">speciality</a>, <a href="designers00b2.html">speciality</a>-->
+          <!--</span>-->
+                                    <!--</h2>-->
+
+
+                                    <!--<div class="member-actions">-->
+                                        <!--<a class="action settings" href="#">-->
+                                            <!--<span>Actions</span>-->
+                                        <!--</a>  <ul class="actions-on-user">-->
+
+                                        <!--<li>-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="show-list-ui" href="session/new.html">            <span class="badge badge-pro">Pro</span>-->
+
+                                                        <!--Add or remove from lists&hellip;-->
+                                                    <!--</a>        </li>-->
+                                                <!--<li class="gift-pro">-->
+                                                    <!--<a href="pro8f3f.html?user=JulienRenvoye">Gift a Pro account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="edit-account">-->
+                                                    <!--<a href="session/new.html">Edit your account</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="remove-from-team">-->
+                                                    <!--<a href="account/members/JulienRenvoye.html">Remove from team</a>-->
+                                                <!--</li>-->
+                                                <!--<li class="leave-team">-->
+                                                    <!--<a href="account/members/JulienRenvoye.html">Leave this team</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                        <!--<li class="negative">-->
+                                            <!--<ul>-->
+                                                <!--<li>-->
+                                                    <!--<a class="block" href="blocksbe2c.html?id=JulienRenvoye">Block Julien Renvoye</a>-->
+                                                    <!--<a class="unblock" href="blocks/JulienRenvoye.html">Unblock Julien Renvoye</a>-->
+                                                <!--</li>-->
+                                            <!--</ul>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="follow-prompt">-->
+                                        <!--<a class="follow" href="session/new.html">-->
+                                            <!--<span>Follow</span>-->
+                                        <!--</a>  <a class="unfollow" href="JulienRenvoye/followers/JulienRenvoye.html">-->
+                                        <!--<span>Following</span>-->
+                                    <!--</a>  <a class="unblock" data-hover="Unblock" href="blocks/JulienRenvoye.html">Blocked</a>-->
+                                    <!--</div>-->
+
+
+                                    <!--<ul class="player-stats group">-->
+                                        <!--<li class="stat-shots">-->
+                                            <!--<a href="JulienRenvoye.html">-->
+                                                <!--<span class="meta">rating</span>-->
+                                            <!--</a>  </li>-->
+
+                                        <!--<li class="stat-followers">-->
+                                            <!--<a href="session/new.html">-->
+                                                <!--<span class="meta">reviews</span>-->
+                                            <!--</a>  </li>-->
+                                    <!--</ul>-->
+
+                                <!--</div>-->
+
+                                <!--<div class="shots">-->
+                                    <!--<a title="IOS iPhone app design concept | modal windows - Jul 11, 2012" data-src="https://d13yacurqjgara.cloudfront.net/users/2559/screenshots/640489/screen_shot_2012-07-08_at_7.13.52_pm_teaser.png" href="shots/640489-IOS-iPhone-app-design-concept-modal-windows.html">-->
+                                    <!--</a>    <a title="Mobile App Grader Website - Dec 3, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/2559/screenshots/2386435/appgrader_teaser.gif" href="shots/2386435-Mobile-App-Grader-Website">-->
+                                <!--</a>    <a title="Predict Launch  - Nov 19, 2015" data-src="https://d13yacurqjgara.cloudfront.net/users/2559/screenshots/2362292/predict_teaser.gif" href="shots/2362292-Predict-Launch.html">-->
+                                <!--</a></div>-->
+
+                            <!--</li>-->
+                        </ol>
+
+
+                        <div class="page">
+                            <div class="pagination"><span class="previous_page disabled">&larr; Prev</span> <a class="next_page" rel="next" href="designers4658.html?page=2">Next &rarr;</a></div>
+                        </div>
+                    </div>
+
+                    <div class="processing processing-results hide">Finding designers&hellip;</div>
+                </div>
+
+
+            </div> <!-- /content -->
+
+        </div></div> <!-- /wrap -->
+
+</html>

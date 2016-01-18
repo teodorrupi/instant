@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="tags/head :: head"></head>
+
+<body id="players" class="logged-out not-pro not-self not-team gridded grid-small grid-with-meta">
+
+    <div th:replace="fragments/header :: header"></div>
+
+    <hr />
+
+    <div class="ajax notice hide">
+      <h2></h2>
+    </div>
+
+    <div th:replace="fragments/itemlist :: itemlist"></div>
+
+    <hr />
+
+
+
+    <div class="shot-overlay" style="display:none;" tabindex="-1">
+        <a href="#" class="close-overlay">
+            <img src="https://d13yacurqjgara.cloudfront.net/assets/icon-shot-x-light-fa16835895506fe67f45d635cace6008.png" alt="Icon shot x light" />
+        </a>
+        <div class="overlay-content group" style="display: none"></div>
+    </div>
+
+    <div class="attachment-overlay" style="display:none;" tabindex="-1"></div>
+
+    <div id="overlay" class="overlay">
+        <div id="list-add" class="lightbox">
+        <a href="#" class="close">
+            <img alt="close" src="https://d13yacurqjgara.cloudfront.net/assets/icon-overlay-x-2x-a7cb62437b9b4f8335cca07423f2da12.png" />
+        </a>
+        <div class="display">
+          <div class="processing">Loading ...</div>
+        </div>
+      </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+
+
+    <script src="http://js.honeybadger.io/v0.2/honeybadger.min.js"></script>
+    <script>
+        /*<![CDATA[*/
+        Honeybadger.configure({
+          api_key: '1f1d2734', // Public API key
+          environment: 'production',
+          disabled: false,
+          onerror: false,
+          ssl: true
+        });
+
+        Honeybadger.setContext({
+          userId: null,
+          serverTime: 1449967600000,
+          clientTime: +new Date(),
+          clientTimeString: (new Date()).toString()
+        })
+        /*]]>*/
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,"script","http://www.google-analytics.com/analytics.js","ga");
+
+        ga("create", "UA-24041469-1", "auto");
+      </script>
+    <script>
+    if (window.location.pathname == "index.html") {
+      ga("send", "pageview", "/shots" + location.search);
+    } else {
+      ga("send", "pageview", "/designers");
+    }
+
+    if ($(".ad.thedeck.target").length > 0) {
+      ga("send", "event", "Deck", "View", "View of a Deck ad", 1);
+    }
+
+
+  </script>
+    <script src="https://d13yacurqjgara.cloudfront.net/assets/global-20c409b492a2a0a6ebc67561d431f4c0.js"></script>
+    <script src="https://d13yacurqjgara.cloudfront.net/assets/designers-0c8a8e51ac90664092f75aa90486000c.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+        var $clearFieldLinks = $('a.remove-location, a.remove-skills');
+        $filterForm.find(':checkbox, :radio').change(function() { $filterForm.submit(); });
+        // Clicking 'x' resets location/skills to 'Any[where]' and updates results
+        $clearFieldLinks.click(function() {
+          $(this).closest('fieldset').find('input').val('');
+          $filterForm.submit();
+          return false;
+        });
+
+        $(function() {
+          Designers.initialize({
+            providers: {"twitter":{"url":"/account/friends/Twitter","return_to":"https://dribbble.com/designers"}}
+          });
+        });
+        /*]]>*/
+    </script>
+    <script src="https://d13yacurqjgara.cloudfront.net/assets/users-e5de6c1c8861d2dde68946585e2d145a.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+        // Lazy load player shots if screen is wide enough to display them
+        var mq = window.matchMedia("screen and (max-width: 768px)");
+
+        if (!mq.matches) {
+          $('.player-cards .player .shots a').each(function() {
+            $(this).append($('<img>', { src: $(this).data('src') }));
+          });
+        }
+        Users.updatePlayerCards({"id":null,"users":[{"id":13307,"followers":"68,908","screenshots":"277"},{"id":14268,"followers":"52,750","screenshots":"176"},{"id":107759,"followers":"52,184","screenshots":"454"},{"id":1,"followers":"44,566","screenshots":"243"},{"id":16711,"followers":"43,199","screenshots":"538"},{"id":3460,"followers":"42,023","screenshots":"564"},{"id":10149,"followers":"41,790","screenshots":"235"},{"id":255,"followers":"39,948","screenshots":"332"},{"id":4,"followers":"39,211","screenshots":"235"},{"id":2559,"followers":"38,970","screenshots":"82"}]});
+        /*]]>*/
+    </script>
+    <script src="https://d13yacurqjgara.cloudfront.net/assets/lists-fda0689b07a22fa37b4322fee4c58797.js"></script><script>List.attach();</script>
+
+    <div class="thedeck loading-dock hide">
+        <script type="text/javascript" th:inline="javascript">
+            /*<![CDATA[*/
+            Dribbble.DeckAd.enable();
+            Dribbble.DeckAd.load();
+            /*]]>*/
+        </script>
+    </div>
+
+
+</body>
+
+</html>

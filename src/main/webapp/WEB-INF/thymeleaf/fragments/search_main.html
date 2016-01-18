@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div th:fragment="search_main" class="secondary" style="float:left;">
+            <!--<a class="pro-motion pro-motion-search" target="_blank" href="pro.html">-->
+            <!--<strong>Go <span class="badge badge-pro">Pro</span> <span class="price">for $20/year</span></strong>-->
+            <!--<em>Pro Search &amp; more. Try it out below.</em>-->
+        <!--</a>-->
+
+        <a href="#options" id="options-toggle" class="">
+            <img width="16" src="https://d13yacurqjgara.cloudfront.net/assets/icon-filter-expand-2x-9520f0df340e6c364b1b9d73d6adb251.png" alt="Icon filter expand 2x" />
+        </a>
+
+        <form class="filter-options" id="options" action="#" th:action="@{/clients?foo=1}" method="GET">
+            <!--<fieldset>-->
+                <!--<h3>Sort</h3>-->
+                <!--<label>-->
+                    <!--<input type="radio" name="sort" id="sort_latest" value="latest" />-->
+                    <!--Latest-->
+                <!--</label>-->
+                <!--<label>-->
+                    <!--<input type="radio" name="sort" id="sort_popular" value="popular" checked="checked" />-->
+                    <!--Popular-->
+                <!--</label>-->
+            <!--</fieldset>-->
+            <fieldset class="find-players-geo">
+                <h3>Vendodhja</h3>
+                <!--<input type="text" name="foo" id="location" placeholder="Ne gjithe Shqiperine" tabindex="1" />-->
+
+
+                <select name="location">
+                    <option value="durres">Durres</option>
+                    <option value="tirane">Tirane</option>
+                    <option value="vlore">Vlore</option>
+                    <option value="berat">Berat</option>
+                </select>
+
+
+
+
+                <p class="help">Zgjidhni qytetin, zonen ose pike turistike</p>
+            </fieldset>
+            <fieldset class="find-players-skills">
+                <h3>Specialitetet</h3>
+                <!--<input type="text" name="skills" id="skills" placeholder="Te gjitha" tabindex="2" />-->
+
+                <select name="speciality">
+                    <option value="pizza">Pica</option>
+                    <option value="fish">Peshk</option>
+                    <option value="traditional">Tradicionale</option>
+                </select>
+
+
+                <p class="help">Zgjidhni specialitetet (p.sh. mish, peshk, ..)</p>
+            </fieldset>
+            <!--<fieldset class="find-players-who">-->
+                <!--<h3>Opsione</h3>-->
+                <!--<label><input type="checkbox" name="for_hire" id="for_hire" value="on" /> Vetem gatime te huaja</label>-->
+                <!--<label><input type="checkbox" name="projects" id="projects" value="on" /> With projects</label>-->
+            <!--</fieldset>-->
+            <div class="submit">
+                <input type="submit" value="Search" class="form-sub" />
+
+
+            </div>
+        </form>
+
+
+        <!--<div class="what-is-pro-search">-->
+            <!--<h3>What <span class="meta">is Pro Search?</span></h3>-->
+
+            <!--<dl class="fd">-->
+                <!--<dt>Power search</dt>-->
+                <!--<dd>Find designers by location, skills, availability and other criteria.</dd>-->
+                <!--<dt>Deep talent pool</dt>-->
+                <!--<dd><em>Thousands</em> of talented designers hang out at Dribbble <em>every day</em>.</dd>-->
+                <!--<dt>Hire direct</dt>-->
+                <!--<dd>Contact available candidates directly from their profile.</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
+    </div>
+
+    <!--<script type="text/javascript" th:inline="javascript">-->
+    <!--/*<![CDATA[*/-->
+        <!--function processForm(e) {-->
+            <!--if (e.preventDefault) e.preventDefault();-->
+
+
+
+            <!--// You must return false to prevent the default form behavior-->
+            <!--return false;-->
+        <!--}-->
+
+        <!--var form = document.getElementById('my-form');-->
+        <!--if (form.attachEvent) {-->
+            <!--form.attachEvent("submit", processForm);-->
+        <!--} else {-->
+            <!--form.addEventListener("submit", processForm);-->
+        <!--}-->
+        <!--/*]]>*/-->
+    <!--</script>-->
+
+</html>

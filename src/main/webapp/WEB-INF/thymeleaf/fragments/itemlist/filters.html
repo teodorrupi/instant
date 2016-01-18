@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div th:fragment="filters" class="secondary">
+        <a class="pro-motion pro-motion-search" target="_blank" href="pro.html">
+            <strong>Go <span class="badge badge-pro">Pro</span> <span class="price">for $20/year</span></strong>
+            <em>Pro Search &amp; more. Try it out below.</em>
+        </a>
+
+        <a href="#options" id="options-toggle" class="">
+            <img width="16" src="https://d13yacurqjgara.cloudfront.net/assets/icon-filter-expand-2x-9520f0df340e6c364b1b9d73d6adb251.png" alt="Icon filter expand 2x" />
+        </a>
+
+        <form class="filter-options" id="options">
+            <input type="hidden" name="twitter" id="twitter" />
+            <input type="hidden" name="dribbble" id="dribbble" />
+
+            <fieldset>
+                <h3>Sort</h3>
+                <label>
+                    <input type="radio" name="sort" id="sort_latest" value="latest" />
+                    Latest
+                </label>
+                <label>
+                    <input type="radio" name="sort" id="sort_popular" value="popular" checked="checked" />
+                    Popular
+                </label>
+            </fieldset>
+
+
+
+            <fieldset class="find-players-who">
+
+                <h3>Only</h3>
+                <label><input type="checkbox" name="for_hire" id="for_hire" value="on" /> Available for hire</label>
+                <label><input type="checkbox" name="projects" id="projects" value="on" /> With projects</label>
+            </fieldset>
+
+            <fieldset class="find-players-geo">
+                <h3>Location</h3>
+
+
+                <input type="text" name="location" id="location" placeholder="All" tabindex="1" />
+                <p class="help">Enter a city, state, or country</p>
+            </fieldset>
+
+
+
+            <fieldset class="find-players-skills">
+                <h3>Skills</h3>
+                <input type="text" name="skills" id="skills" placeholder="Any" tabindex="2" />
+                <p class="help">Use commas for multiple skills</p>
+            </fieldset>
+
+            <div class="submit">
+                <input type="submit" value="Search" class="form-sub" />
+            </div>
+        </form>
+
+
+        <div class="what-is-pro-search">
+            <h3>What <span class="meta">is Pro Search?</span></h3>
+
+            <dl class="fd">
+                <dt>Power search</dt>
+                <dd>Find designers by location, skills, availability and other criteria.</dd>
+                <dt>Deep talent pool</dt>
+                <dd><em>Thousands</em> of talented designers hang out at Dribbble <em>every day</em>.</dd>
+                <dt>Hire direct</dt>
+                <dd>Contact available candidates directly from their profile.</dd>
+            </dl>
+        </div>
+    </div>
+
+</html>
