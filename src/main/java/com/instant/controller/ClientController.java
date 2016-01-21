@@ -53,11 +53,19 @@ public class ClientController {
 //    }
 
     @RequestMapping("/clients")
-    public String getClients(@RequestParam("location") String location, @RequestParam("speciality") String speciality, Model model) {
+     public String getClients(@RequestParam("location") String location, @RequestParam("speciality") String speciality, Model model) {
         Clients clients = new Clients();
         clients.getClientList().addAll(this.clientService.findClientsWithParams(location, speciality));
         model.addAttribute("clients", clients);
-        return "pages/search";
+        return "index";
+    }
+
+    @RequestMapping("/account")
+    public String getAccount(String speciality, Model model) {
+//        Clients clients = new Clients();
+//        clients.getClientList().addAll(this.clientService.findClientsWithParams(location, speciality));
+//        model.addAttribute("clients", clients);
+        return "user";
     }
 
 }

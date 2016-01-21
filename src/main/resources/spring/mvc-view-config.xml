@@ -15,7 +15,7 @@
          
     <bean id="templateResolver" 
         class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
-        <property name="prefix" value="/WEB-INF/arilloTheme/blue/" />
+        <property name="prefix" value="/WEB-INF/originalContent/" />
         <property name="suffix" value=".html" />
         <property name="templateMode" value="HTML5" />
         <!-- Template cache is set to false (default is true).        -->

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Bootstrap 3, from LayoutIt!</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,200' rel='stylesheet' type='text/css'> -->
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Product+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Product+Sans" rel="stylesheet" type="text/css"/>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta name="description" content="Source code generated using layoutit.com"/>
+    <meta name="author" content="LayoutIt!"/>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" th:href="@{/resources/oc_css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="css/style.css" th:href="@{/resources/oc_css/style.css}" rel="stylesheet"/>
 
 
 </head>
 <body>
 
 
-<div class="container-fluid" style="padding-top: 65px;">
+<div class="container-fluid" style="padding-top: 0px;">
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -36,7 +36,7 @@
 
                 <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <a class="navbar-brand" href="#" style="font-family: 'Product Sans',arial,sans-serif; font-size: 2em; font-weight: 400;">instant</a>
+                        <a class="navbar-brand" href="#" th:href="@{/}" style="font-family: 'Product Sans',arial,sans-serif; font-size: 2em; font-weight: 400;">instant</a>
                     </ul>
 
                     <!-- <ul class="nav navbar-nav navbar-right">
@@ -99,7 +99,7 @@
                                 <!--<button class="btn btn-default" type="submit">Button3</button>-->
                             <!--</div>-->
                         <!--</section>-->
-                        <!--<br>-->
+                        <!--<br/>-->
                         <!--<style type="text/css">-->
                             <!--section {-->
                                 <!--width: 100%;-->
@@ -200,22 +200,22 @@
                         <!--</fieldset>-->
                     <!--</form>-->
 
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
                 <!--</div>-->
 
                 <!--<div class="col-md-6" style="border: 1px solid rgba(204, 204, 204, 0.57); background-color: white; padding-left:5px; padding-right:5px;">-->
@@ -255,17 +255,17 @@
 
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -278,17 +278,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -301,17 +301,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -324,17 +324,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -348,17 +348,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -372,17 +372,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -396,17 +396,17 @@
                         <!--</div>-->
                         <!--&lt;!&ndash; <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div>-->
                         <!--<div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">-->
                             <!--<h4>here</h4>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
-                            <!--<br>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
+                            <!--<br/>-->
                         <!--</div> &ndash;&gt;-->
                     <!--</div>-->
 
@@ -415,46 +415,46 @@
 
 
 
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
-                    <!--<br>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
+                    <!--<br/>-->
                 <!--</div>-->
 
                 <!--<div class="col-md-3">-->
@@ -470,14 +470,82 @@
                 <div class="col-md-10">
                     <div class="row" style="background-color: white;">
 
+
+                        <style>
+
+                            .container {
+                            max-width: 997px !important;
+                            }
+
+                            .jumbotron.home-search {
+                            background: transparent;
+                            }
+
+                            .home-search {
+                            padding-bottom: 0;
+                            padding-top: 120px;
+                            }
+
+                            .home-search .main_description {
+                            text-align: center;
+                            }
+
+                            .home-search .form-control {
+                            padding: 20px 8px;
+                            }
+
+                            .home-search .input-group-addon {
+                            padding: 0;
+                            }
+
+
+                            .home-search .input-group-addon.input-group-addon-text {
+                            background: #ffffff;
+                            color: #000;
+                            border: none;
+                            padding-right: 20px;
+                            }
+
+                            .home-search .input-group-addon .btn {
+                            padding: 9px 18px;
+                            }
+                            .home-search .input-group-addon li a {
+                            text-align: left;
+                            padding: 10px 18px;
+                            }
+                            .home-search .input-group-addon .btn {
+                            text-transform: none;
+                            }
+
+                            .home-search .input-group-addon .btn {
+                            color: #000;
+                            font-weight: 400;
+                            background-color: transparent;
+                            }
+
+                            .search-btn {
+                            width: 180px;
+                            float: none;
+                            }
+
+                            .btn-primary {
+                            background-image: -webkit-linear-gradient(top, #007fff 0%, #0066cc 100%);
+                            background-image: linear-gradient(to bottom, #007fff 0%, #0066cc 100%);
+                            background-repeat: repeat-x;
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff007fff', endColorstr='#ff0066cc', GradientType=0);
+                            border-color: #0061c2;
+                            }
+
+                        </style>
+
                         <div class="jumbotron home-search" style="">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <br>
+                                        <br/>
                                         <p class="main_description">Search thousands of stores, brands, products and user classifieds all in one place</p>
 
-                                        <br><br>
+                                        <br/><br/>
                                         <div class="row">
 
                                             <div class="col-sm-8 col-sm-offset-2" style="text-align: center">
@@ -487,7 +555,7 @@
                                                         <div class="input-group">
                                                             <span class="input-group-addon input-group-addon-text">Find me a</span>
 
-                                                            <input type="text" class="form-control col-sm-3" placeholder="e.g. BMW, 2 bed flat, sofa ">
+                                                            <input type="text" class="form-control col-sm-3" placeholder="e.g. BMW, 2 bed flat, sofa "/>
                                                             <div class=" input-group-addon hidden-xs">
                                                                 <div class="btn-group">
                                                                     <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
@@ -513,22 +581,22 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                        <br>
+                                        <br/>
+                                        <br/>
                                         <div class="row">
                                             <div class="col-sm-12" style="text-align: center">
-                                                <a href="listings.html" class="btn btn-primary search-btn">Search</a>
+                                                <a href="listings.html" th:href="@{/clients(location=3,speciality=1)}" class="btn btn-primary search-btn">Search</a>
                                             </div>
                                         </div>
-                                        <br>
-                                        <br>
+                                        <br/>
+                                        <br/>
                                         <div class="row">
                                             <div class="col-sm-12" style="text-align: center">
 
                                                 <div id="quotes">
                                                     <div class="text-item" style="display: none;">Boom! <strong>Vince</strong> just sold a <strong>Washing Machine</strong> in <strong>Sheffield</strong></div>
                                                     <div class="text-item" style="display: none;"><strong>Julia</strong> is availiable for <strong>home cleaning</strong> in <strong>Manchester</strong></div>
-                                                    <div class="text-item" style="display: block;">Success! <strong>Paul</strong> has just sold a <strong>Mercedes-Benz E-class</strong> in <strong>Liverpool</strong></div>
+                                                    <div class="text-item" style="display: none;">Success! <strong>Paul</strong> has just sold a <strong>Mercedes-Benz E-class</strong> in <strong>Liverpool</strong></div>
                                                     <div class="text-item" style="display: none;">Hey, <strong>Uber</strong> has a <strong>job opening</strong> in <strong>London</strong></div>
                                                 </div>
 
@@ -558,11 +626,11 @@
                 <p style="max-width: 728px; text-align: center; margin: 21px auto; color: #999; line-height: normal; font-size: 12px;">instant lets you search stuff and do other stuff. There are 5,382 stuff open in City Name. Search stuff in City Name with instant. Be social. Have fun.</p>
             </div>
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div class="browseLinks" style="width: 100%; margin: 21px auto; text-align: left; margin-bottom: 10px; color: #666; font-size: 14px;"> 
@@ -600,7 +668,7 @@
             </div>
 
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div>
@@ -614,9 +682,9 @@
 
 
 
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/jquery.min.js" th:src="@{/resources/oc_js/jquery.min.js}"></script>
+<script src="js/bootstrap.min.js" th:src="@{/resources/oc_js/bootstrap.min.js}"></script>
+<script src="js/scripts.js" th:src="@{/resources/oc_js/scripts.js}"></script>
+<script src="js/global.js" th:src="@{/resources/oc_js/global.js}"></script>
 </body>
 </html>

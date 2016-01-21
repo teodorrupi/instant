@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Bootstrap 3, from LayoutIt!</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,200' rel='stylesheet' type='text/css'> -->
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Product+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Product+Sans" rel="stylesheet" type="text/css"/>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta name="description" content="Source code generated using layoutit.com"/>
+    <meta name="author" content="LayoutIt!"/>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" th:href="@{/resources/oc_css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="css/style.css" th:href="@{/resources/oc_css/style.css}" rel="stylesheet"/>
 
 
 </head>
@@ -36,7 +36,7 @@
 
                 <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <a class="navbar-brand" href="#" style="font-family: 'Product Sans',arial,sans-serif; font-size: 2em; font-weight: 400;">instant</a>
+                        <a class="navbar-brand" href="#" th:href="@{/}" style="font-family: 'Product Sans',arial,sans-serif; font-size: 2em; font-weight: 400;">instant</a>
                     </ul>
 
                     <!-- <ul class="nav navbar-nav navbar-right">
@@ -94,12 +94,14 @@
                                 <small> Blah blah</small>
                             </div>
                             <div id="two">
-                                <button class="btn btn-default" type="submit">Button1</button>
+                                <form data-th-action="@{/account}">
+                                    <button class="btn btn-default" type="submit" value="">User</button>
+                                </form>
                                 <button class="btn btn-default" type="submit">Button2</button>
                                 <button class="btn btn-default" type="submit">Button3</button>
                             </div>
                         </section>
-                        <br>
+                        <br/>
                         <style type="text/css">
                             section {
                                 width: 100%;
@@ -268,22 +270,22 @@
                         </fieldset>
                     </form>
 
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
 
                 <div class="col-md-6" style="border: 1px solid rgba(204, 204, 204, 0.57); background-color: white; padding-left:5px; padding-right:5px;">
@@ -323,17 +325,17 @@
 
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -346,17 +348,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -369,17 +371,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -392,17 +394,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -416,17 +418,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -440,17 +442,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -464,17 +466,17 @@
                         </div>
                         <!-- <div class="col-md-4" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div>
                         <div class="col-md-8" style="border-bottom: 1px solid rgba(204, 204, 204, 0.57);">
                             <h4>here</h4>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </div> -->
                     </div>
 
@@ -483,46 +485,46 @@
 
 
 
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
 
                 <div class="col-md-3">
@@ -538,11 +540,11 @@
                 <p style="max-width: 728px; text-align: center; margin: 21px auto; color: #999; line-height: normal; font-size: 12px;">instant lets you search stuff and do other stuff. There are 5,382 stuff open in City Name. Search stuff in City Name with instant. Be social. Have fun.</p>
             </div>
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div class="browseLinks" style="width: 100%; margin: 21px auto; text-align: left; margin-bottom: 10px; color: #666; font-size: 14px;"> 
@@ -580,7 +582,7 @@
             </div>
 
             <div>
-                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;">
+                <hr style="line-height: 1em; margin: 21px 14px; width: auto; box-sizing: border-box; border-top: 1px #ccc solid;"/>
             </div>
 
             <div>
@@ -595,8 +597,8 @@
 
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/jquery.min.js" th:src="@{/resources/oc_js/jquery.min.js}"></script>
+<script src="js/bootstrap.min.js" th:src="@{/resources/oc_js/bootstrap.min.js}"></script>
+<script src="js/scripts.js" th:src="@{/resources/oc_js/scripts.js}"></script>
 </body>
 </html>
