@@ -164,3 +164,16 @@ margin-bottom:0px;}
 
 .table-responsive{
 margin-bottom:-3%;}
+
+.row{
+    margin-left:-17px;
+}
+
+
+
+
+@media (min-width: 768px){
+    .navbar .navbar-nav {
+        margin-left: 60%;
+    }
+}
