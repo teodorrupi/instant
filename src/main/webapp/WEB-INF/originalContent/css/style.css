@@ -169,13 +169,16 @@ margin-bottom:-3%;}
     margin-left:-17px;
 }
 
-
-@media (min-width: 768px){
-    .navbar .navbar-nav {
-        margin-left: 60%;
-    }
+.index_logo {
+    margin-left: 62.5%;
 }
 
+@media (max-width: 900px) {
+    .index_logo {
+        margin-left: 52%;
+    }
+
+}
 
 .container {
 max-width: 997px !important;
